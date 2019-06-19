@@ -7,7 +7,7 @@ from resources.user import UserRegister, UserList, SaveCart, UserCart
 from resources.item import Item, ItemList, ItemEdit
 from resources.order import Order, OrderList
 #from resources.store import Store, StoreList
-#from flask_cors import CORS
+from flask_cors import CORS
 
 app = Flask(__name__)
 
@@ -15,7 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 app.secret_key = 'abcd'
 
-#CORS(app)
+CORS(app)
 #CORS(app, resources={r"/api/*": {"Access-Control-Allow-Origin": "127.0.0.1:3000"}})
 api = Api(app)
 
