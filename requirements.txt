@@ -2,6 +2,6 @@ Flask
 Flask-RESTful
 Flask-JWT
 FLask-SQLAlchemy
-CORS
+Flask-CORS
 uwsgi
 psycopg2 
